@@ -1,0 +1,301 @@
+@import url(./reset.css);
+
+
+
+
+/* 商品會員大圖 */
+
+#bigpic {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+
+/* 加入會員選單 */
+
+#joinus {
+
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 24px;
+    padding-bottom: 36px;
+
+    border-bottom: 1px solid #424242;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 30px 10px;
+}
+
+#joinus button {
+    width: 200px;
+    height: 40px;
+
+    background-color: #F9D6AE;
+    border: 1px solid #424242;
+    border-radius: 40px;
+
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+#joinus p {
+    width: 530px;
+    line-height: 1.5;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 14px;
+}
+
+#joinus img {
+    width: 320px;
+    height: 140px;
+}
+
+#joinus .member {
+
+    margin-left: 30px;
+    width: 300px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    grid-column: 2/ 4;
+    grid-row: 1 / 4;
+}
+
+#joinus button:hover {
+    background-color: #F44336;
+}
+
+
+
+
+.outside {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+
+
+
+/* 商品列表 */
+
+#shoplist {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+#shoplist ul {
+    padding-top: 20px;
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+
+}
+
+#shoplist ul li {
+
+    border: 1px solid #F6F6F6;
+    background-color: #F6F6F6;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+#shoplist a {
+
+    color: #424242;
+    text-decoration: none;
+}
+
+#shoplist ul li:hover {
+    background-color: #F9D6AE;
+}
+
+
+
+
+
+/* 麵包屑返回列表 */
+
+#alllist {
+    width: 950px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+#alllist .backbutton {
+    width: 160px;
+    padding-top: 26px;
+    padding-bottom: 20px;
+
+
+    display: flex;
+}
+
+
+#alllist .backbutton i {}
+
+#alllist .backbutton a {
+
+    text-decoration: none;
+    color: #424242;
+}
+
+#alllist .backbutton p {}
+
+
+
+/* 罐頭陳列 */
+
+
+#alllist .canlist {
+
+    width: 948px;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+}
+
+#alllist .canlist .can {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#alllist .canlist .can a {}
+
+#alllist .canlist .can img {
+    height: 120px;
+}
+
+
+#alllist .canlist .can h4 {
+    padding: 10px;
+}
+
+#alllist .canlist .can p {}
+
+
+
+
+/* 麵包屑返回列表 */
+
+
+#alllist .cattoy {
+    width: 160px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+}
+
+#alllist .cattoy i {}
+
+#alllist .cattoy a {
+    text-decoration: none;
+    color: #424242;
+}
+
+#alllist .cattoy p {}
+
+
+
+/* 抓柱陳列 */
+
+
+
+#alllist .toylist {
+
+    width: 948px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    display: flex;
+}
+
+#alllist .toylist .toy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#alllist .toylist .toy img {
+    height: 210px;
+}
+
+#alllist .toylist .toy a {}
+
+#alllist .toylist .toy h4 {
+
+    padding-top: 30px;
+}
+
+#alllist .toylist .toy p {}
+
+
+
+/* 麵包屑返回列表 */
+
+#alllist .catbedlist {
+    width: 160px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    display: flex;
+}
+
+#alllist .catbedlist i {}
+
+#alllist .catbedlist a {
+    text-decoration: none;
+    color: #424242;
+}
+
+#alllist .catbedlist p {}
+
+
+
+/* 貓窩列表 */
+
+#alllist .catbed {
+    width: 948px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#alllist .catbed .bed {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#alllist .catbed .bed img {
+    height: 210px;
+    padding-bottom: 30px;
+}
+
+#alllist .catbed .bed a {}
+
+#alllist .catbed .bed h4 {}
+
+#alllist .catbed .bed p {}

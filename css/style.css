@@ -1,0 +1,371 @@
+@import url("reset.css");
+
+/* body {
+    font-family: "Noto Sans TC", sans-serif;
+} */
+
+a {
+    color: #424242;
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*        主選單和首圖       */
+
+#maintop {
+    background-image: url(../img/mainpage.png);
+    background-size: cover;
+    height: 670px;
+}
+
+#banner {
+    padding-bottom: 24px;
+}
+
+#banner img {
+   
+    background-size: cover;
+}
+
+#maintop .top {
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    
+
+}
+
+#maintop .top img {
+    margin-left: 41px;
+    width: 189px;
+    height: 49px;
+
+}
+
+#maintop .middle {
+    position: absolute;
+    right: 130px;
+    top: 20px;
+}
+
+
+#maintop .middle ul {
+    display: flex;
+}
+
+#maintop .middle li {
+    margin: 0 30px;
+    line-height: 30px;
+}
+
+#maintop .middle li:last-child {
+    margin-left: 140px;
+}
+
+#maintop .middle li i {
+    color: #424242;
+}
+
+#maintop .middle li a {
+    color: #424242;
+    text-align: center;
+}
+
+#maintop .middle li a:hover {
+    color: #FFA338;
+    border-bottom: 2px solid #FFA338;
+}
+
+
+
+
+/*         留言板輪播      */
+
+#messagerow {
+
+    /* width: 100%; */
+    width: 1200px;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#messagerow .message {
+    border: 2px solid #424242;
+    border-radius: 20px;
+    width: 240px;
+    height: 64px;
+    padding: 5px 10px;
+    margin: 0 8px;
+
+
+    position: relative;
+}
+
+
+#messagerow .message a {
+    display: block;
+
+}
+
+#messagerow .message .ppic {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#messagerow .message .ppic img {}
+
+
+#messagerow .message .ppic h3 {
+    font-size: 18px;
+    margin-left: 12px;
+    
+
+    /* position: absolute;
+    right: 170px;
+    top: 10px; */
+}
+
+
+#messagerow .message p {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 12px;
+}
+
+
+#messagerow li:hover {
+    background: #F9D6AE;
+
+}
+
+
+
+
+/*         中間提醒文字      */
+
+#text1 {
+    width: 1200px;
+    margin: 0  auto;
+    /* margin-top: 100px; */
+    padding-bottom: 28px;
+    text-align: center;
+    line-height: 20px;
+
+    position: relative;
+}
+
+#text1 p {
+    font-size: 14px;
+}
+
+#text1 p::before {
+    content: '';
+    display: block;
+    width: 380px;
+    height: 1px;
+    background-color: black;
+
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+#text1 p::after {
+    content: '';
+    display: block;
+    width: 380px;
+    height: 1px;
+    background-color: black;
+
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+#text2 {
+    width: 1200px;
+    margin: 0  auto;
+   
+    padding-bottom: 28px;
+    padding-top: 40px;
+    text-align: center;
+    line-height: 20px;
+
+    position: relative;
+}
+
+#text2 p {
+    font-size: 14px;
+}
+
+#text2 p::before {
+    content: '';
+    display: block;
+    width: 380px;
+    height: 1px;
+    background-color: black;
+
+    position: absolute;
+    left: 0px;
+    top: 50px;
+}
+
+#text2 p::after {
+    content: '';
+    display: block;
+    width: 380px;
+    height: 1px;
+    background-color: black;
+
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+
+
+
+/*          小圖領養        */
+
+#smallcatpic {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#smallcatpic .catpic {
+    margin-top: 40px;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+#smallcatpic .catpic a {}
+
+#smallcatpic .catpic img {
+    border-radius: 50%;
+    border: 2px solid #424242;
+    box-sizing: border-box;
+    display: block;
+}
+
+#smallcatpic .catpic h1 {
+    font-family: "Lobster", sans-serif;
+    display: none;
+    font-size: 36px;
+    color: white;
+
+    position: absolute;
+    left: 40px;
+    top: 80px;
+
+}
+
+#smallcatpic .catpic:hover h1 {
+    display: block;
+}
+
+
+
+/*          創辦人欄位        */
+
+#owner {
+    background-color: #424242;
+    color: white;
+    margin-top: 72px;
+    overflow: hidden;
+    border-top-left-radius: 350px;
+    padding-top: 20px;
+
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 260px 50px;
+    gap: 30px;
+}
+
+#owner img {
+
+    grid-column: 4 / 5;
+    /* grid-row: 3 /-3; */
+    margin-right: 120px;
+    margin-top: 20px;
+
+    height: 380px;
+
+}
+
+#owner h1 {
+    font-size: 32px;
+    margin-top: 130px;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#owner h3 {
+
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 120px;
+
+    grid-column: 2 / 4;
+    grid-row: 2 / 2;
+}
+
+
+
+
+/*          頁尾        */
+
+footer {
+    /* border-top: 1px solid#ADAAAA; */
+    background-color: #424242;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {}
+
+footer ul {
+    padding: 20px 0;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+footer li {}
+
+footer li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+footer li a:hover {
+    color: #F9D6AE
+}

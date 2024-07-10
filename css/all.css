@@ -1,0 +1,115 @@
+@import url(./reset.css);
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+/*           最外層包裝         */
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*           主選單         */
+
+#maintop {
+    background-color: #888888;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20px 30px 20px;
+
+}
+
+
+#maintop img {
+    padding: 10px;
+    height: 49px;
+    margin-left: 16px;
+}
+
+#maintop .middle {
+
+    width: 1000px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+    margin-left: 70px;
+}
+
+#maintop .middle ul {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 29px;
+
+}
+
+#maintop .middle ul li {
+    margin-right: 90px;
+    flex-grow: 1;
+}
+
+
+#maintop .middle li i:last-child {
+    margin-left: 120px;
+    flex-grow: 0;
+
+}
+
+
+#maintop .middle ul li a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+#maintop .middle li a:hover {
+    color: #FFA338;
+    border-bottom: 2px solid #FFA338;
+}
+
+#maintop .middle ul li i {
+    color: #ffff;
+}
+
+
+#maintop .middle .burger {
+    display: none;
+}
+
+
+/*           頁尾        */
+
+footer {
+    border-top: 1px solid#ADAAAA;
+    background-color: #424242;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {}
+
+footer ul {
+    padding: 20px 0;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+footer li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+footer li a:hover {
+    color: #F9D6AE;
+}

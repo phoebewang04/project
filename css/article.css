@@ -1,0 +1,295 @@
+@import url(./reset.css);
+
+body {}
+
+
+/*           推薦文章上層         */
+
+#articletop {
+    width: 1167px;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+#articletop .readout1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#articletop .readout2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#articletop img {
+    border: 2px solid black;
+}
+
+
+#articletop .topread {
+    background-color: #F5F5F5;
+    width: 835px;
+    height: 173px;
+
+    position: relative;
+    padding-left: 20px;
+}
+
+#articletop .topread::before {
+    content: '';
+    display: block;
+    width: 810px;
+    height: 1px;
+    background-color: black;
+
+
+    position: absolute;
+    left: 20px;
+    top: 60px;
+
+    margin: 15px 0px;
+
+}
+
+
+#articletop .topread a {
+
+    color: black;
+    text-decoration: none;
+    display: block;
+
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-rows: 50px 50px 50px;
+}
+
+#articletop .topread h3 {
+
+    font-size: 24px;
+    margin: 30px 0px;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
+#articletop .topread p {
+
+    font-size: 14px;
+    margin: 40px 0px;
+    width: 820px;
+
+
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+#articletop .topread:hover {
+    background: rgba(249, 214, 174, 0.50);
+
+}
+
+
+
+/*           推薦文章下層         */
+
+#articledown {
+    width: 1090px;
+    margin: 0 auto;
+
+    padding-top: 60px;
+
+}
+
+#articledown ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+#articledown li {
+    border: 2px solid black;
+    width: 252px;
+    height: 280px;
+    margin-bottom: 20px;
+
+    border-radius: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+    position: relative;
+}
+
+#articledown li::before {
+
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: black;
+
+    position: absolute;
+    left: 25px;
+    bottom: 60px
+}
+
+#articledown li a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+
+
+}
+
+
+#articledown li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#articledown li h3 {
+
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#articledown li p {
+
+    font-size: 14px;
+    margin-top: 19px;
+    padding-left: 25px;
+    text-align: start;
+
+
+    display: -webkit-box;
+    width: 200px;
+    height: 42px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+
+}
+
+#articledown li h1 {
+    font-family: "Lobster", sans-serif;
+    display: none;
+    font-size: 36px;
+    color: white;
+
+    position: absolute;
+    left: 60px;
+    top: 80px;
+
+}
+
+#articledown li:hover h1 {
+    display: block;
+}
+
+
+
+
+
+/*           頁數選單         */
+
+
+#numlist {
+    padding: 40px 0px;
+
+}
+
+#numlist ul {}
+
+#numlist ul a {
+
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+
+    color: #424242;
+}
+
+#numlist ul li {
+    padding: 0 12px;
+    height: 20px;
+}
+
+#numlist ul .num {
+    width: 24px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+
+#numlist ul li i {}
+
+
+#numlist ul li i:hover {
+    color: #F9D6AE;
+}
+
+#numlist p {
+
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #ADAAAA
+}
+
+#numlist ul .num:hover {
+    color: #424242;
+    border-bottom: 1px solid #424242;
+
+}
+
+
+
+
+
+
+/*           頁尾        */
+
+footer {
+    border-top: 1px solid#ADAAAA;
+    background-color: #424242;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {}
+
+footer ul {
+    padding: 20px 0;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+footer li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+footer li a:hover {
+    color: #F9D6AE;
+}

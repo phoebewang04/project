@@ -1,0 +1,148 @@
+@import url(./reset.css);
+
+
+/* 關鍵字選單 */
+
+#keyword {
+    width: 852px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+#keyword ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#keyword li {}
+
+#keyword a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* 發文輸入框 */
+
+#type {
+    width: 852px;
+    margin: 0 auto;
+
+    padding-top: 40px;
+ 
+}
+
+#type form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#type textarea {
+    width: 830px;
+    height: 60px;
+    outline: none;
+    border: 1px solid #ADAAAA;
+    border-radius: 12px;
+    padding: 12px;
+   
+}
+
+#type button {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    width: 100px;
+    border-radius: 40px;
+    border: 0;
+}
+
+
+/* 留言板 */
+
+#allmessage {
+
+    /* border: 1px solid red; */
+    width: 852px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#allmessage a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+#allmessage .outframe {
+    
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 32px 12px;    
+
+}
+
+
+#allmessage .outframe .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding-bottom: 16px;
+
+}
+
+
+#allmessage .outframe .title img {
+    width: 20px;
+}
+
+#allmessage .outframe .title h2 {
+    font-size: 18px;
+}
+
+#allmessage .outframe .title h3 {
+    font-size: 12px;
+}
+
+#allmessage .outframe .p1 {
+    font-size: 16px;
+    padding-bottom: 12px;
+    margin-left: 20px;
+}
+#allmessage .outframe .p2 {
+    font-size: 14px;
+    margin-left: 20px;
+
+    display: -webkit-box;
+    width: 800px;
+    height: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+
+}
+
+#allmessage .outframe .downicon {
+    width: 120px;
+    padding-top: 16px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#allmessage .outframe .downicon i {
+    width: 10px;
+}
+
+#allmessage .outframe .downicon p {
+    font-size: 12px;
+}
+
+#allmessage .outframe .downicon i:hover {
+   
+}
+
