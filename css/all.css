@@ -32,10 +32,10 @@ body {
 
 #maintop .middle {
 
-    width: 1000px;
+    width: 950px;
     grid-column: 2 / 3;
     grid-row: 2 / 2;
-    margin-left: 70px;
+    margin-left: 100px;
 }
 
 #maintop .middle ul {
@@ -48,15 +48,18 @@ body {
 }
 
 #maintop .middle ul li {
-    margin-right: 90px;
+    margin-right: 70px;
     flex-grow: 1;
 }
 
 
 #maintop .middle li i:last-child {
-    margin-left: 120px;
-    flex-grow: 0;
+    margin-left: 150px;
+    /* flex-grow: 0; */
+}
 
+#maintop .middle ul li:nth-last-child(2) {
+    margin-right: 0px;
 }
 
 
@@ -89,7 +92,10 @@ footer {
     padding: 20px;
 }
 
-footer img {}
+footer img {
+    width: 228px;
+    height: 59px;
+}
 
 footer ul {
     padding: 20px 0;

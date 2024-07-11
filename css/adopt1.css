@@ -1,0 +1,115 @@
+@import url(../css/reset.css);
+
+/* 麵包屑返回列表 */
+
+#backbutton {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 100px;
+
+
+}
+
+#backbutton i {
+    margin-left: 10px;
+}
+
+#backbutton a {
+
+    text-decoration: none;
+    color: black;
+}
+
+#backbutton p {
+    margin-left: 10px;
+}
+
+
+/* 領養相關資訊及照片 */
+
+#infrom {
+    width: 930px;
+    margin: 0 auto;
+    padding: 40px;
+
+    display: flex;
+}
+
+#infrom .slide {
+    
+    width: 543px;
+
+    position: relative;
+}
+
+#infrom .slide img {
+    border-radius: 8px;
+}
+
+#infrom .slide .smallpic {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#infrom .slide .smallpic img {
+
+    border-radius: 8px;
+}
+
+#infrom .slide .arrow1 {
+
+    position: absolute;
+    left: 510px;
+    top: 340px;
+}
+
+#infrom .slide .arrow2 {
+   
+    position: absolute;
+    left: 5px;
+    top: 340px;
+}
+
+#infrom .slide .arrow1 i {
+   color: #fff;
+   font-size: 30px;
+}
+
+#infrom .slide .arrow2{
+    font-size: 30px;
+    color: #fff;
+}
+
+#infrom .name {
+    width: 320px;
+    margin-left: 65px;
+
+}
+
+#infrom .name h1 {
+    font-size: 32px;
+    padding-bottom: 24px;
+}
+
+#infrom .name p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#infrom .name button {
+
+    width: 217px;
+    height: 47px;
+    border: none;
+    background-color: #FFA338;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 64px;
+}
+
+#infrom .name p a{
+    font-size: 12px;
+    color: #424242;
+}

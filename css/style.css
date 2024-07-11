@@ -343,7 +343,10 @@ footer {
     padding: 20px;
 }
 
-footer img {}
+footer img {
+    width: 228px;
+    height: 59px;
+}
 
 footer ul {
     padding: 20px 0;
