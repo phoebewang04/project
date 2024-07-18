@@ -53,9 +53,8 @@ a {
 }
 
 #maintop .middle {
-    position: absolute;
-    right: 130px;
-    top: 20px;
+
+    margin-left: 100px;
 }
 
 
@@ -69,7 +68,7 @@ a {
 }
 
 #maintop .middle li:last-child {
-    margin-left: 140px;
+    margin-left: 260px;
 }
 
 #maintop .middle li i {
@@ -136,10 +135,6 @@ a {
     font-size: 18px;
     margin-left: 12px;
     
-
-    /* position: absolute;
-    right: 170px;
-    top: 10px; */
 }
 
 
@@ -157,6 +152,62 @@ a {
 
 }
 
+/* 中間廣告 */
+
+#banner {
+    /* border: 1px solid red; */
+    height: 140px;
+
+    display: flex;
+    align-items: center;
+  
+
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 20px;
+
+}
+
+#banner .bannerTitle {
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+
+    font-size: 60px;
+
+}
+
+#banner .bannerArticle {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#banner .bannerArticle .top {
+
+    font-size: 18px;
+}
+
+#banner .bannerItem {
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 40px;
+    
+}
+
+.bannerItem1 {
+    
+    background-color: #F9D6AE;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+#banner .bannerItem p {
+
+    margin: 10px;
+    
+}
 
 
 

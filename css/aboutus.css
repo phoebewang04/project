@@ -1,0 +1,40 @@
+@import url(./reset.css);
+
+/* 關於我們 */
+
+.aboutus {
+    padding: 20px;
+    width: 900px;
+    margin: 40px auto;
+
+    position: relative;
+}
+
+.aboutus h1 {
+
+    font-size: 18px;
+    color: #ECAF67;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+   
+}
+
+.aboutus p {
+    font-size: 14px;
+}
+
+.aboutus h2 {
+    color: #ECAF67;
+}
+
+.aboutus .img {
+
+   position: absolute;
+   left: 780px;
+   bottom: -20px;
+}
+
+.aboutus .bottom {
+    margin-top: 70px;
+}

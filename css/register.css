@@ -1,83 +1,65 @@
 @import url(./reset.css);
 
-/* 註冊頁面 */
+/* 登入會員頁面 */
 
-#signin { 
-    background-image: url(../img/register.png);
+#register {
+
+    background-image: url(../img/signin.png);
+    height: 640px;
     background-size: cover;
-    height: 700px;
     color: #424242;
 
     position: relative;
 }
 
-.signininform {
-    background-color:#fff;
-    opacity: 0.7;
+#register .registerInform {
+
+    /* background-color:#fff;
+    opacity: 0.7; */
     border-radius: 20px;
     padding: 20px;
     width: 500px;
 
     position:absolute;
-    left: 100px;
-    top: 90px;
+    left: 120px;
+    top: 150px;
 }
 
-.signininform h1 {
+#register .registerInform h1 {
+
     font-size: 20px;
     margin-bottom: 40px;
     text-align: center;
     font-weight: bold;
 }
 
-.signinItem{
+
+.registerInform .registerItem {
+
     display: flex;
     margin-bottom: 40px;
 }
 
-.signinItem h2 {
+
+.registerItem h2 {
+
     font-size: 16px;
     padding-right: 28px;
 }
 
-.signinItem_cont input {
+.registeritem_cont input {
+
     border-top: none;
     border-left: none;
     border-right: none;
     background-color: transparent;
     border-bottom: 1px solid #323233;
-    width: 360px;
-}
-
-.signinItem_gender {
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.signinItem_gender h2 {
-    padding-right: 52px;
-}
-
-.signinItem_gender input {
-
+    width: 400px;
 }
 
 
-input {
-    padding: 3px 10px;
-}
+.registerInform button {
 
-.check {
-    display: flex;
-    margin-bottom: 24px;
-}
-
-.check label {
-    font-size: 14px;
-}
-
-
-button {
     background-color: #424242;
     border-radius: 40px;
     width: 120px;
@@ -89,10 +71,19 @@ button {
     margin-bottom: 10px;
 }
 
-.signininform a {
-    /* text-decoration: none; */
+
+.registerInform .link {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.registerInform a {
+
     font-size: 12px;
     color: #424242;
-    margin-left: 210px;
-    
+    /* margin-left: 400px; */
+
 }
+
+
