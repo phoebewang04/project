@@ -301,7 +301,7 @@ a {
 
 /*          小圖領養        */
 
-.icon {
+.smallcatpic .icon {
     display: none;
 }
 
@@ -606,7 +606,7 @@ footer li a:hover {
     }
 
     #messagerow {
-        
+
     }
 
 }
