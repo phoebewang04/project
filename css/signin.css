@@ -3,24 +3,21 @@
 /* 註冊頁面 */
 
 #signin { 
-    background-image: url(../img/register.png);
+    background-image: url(../img/signin.png);
     background-size: cover;
-    height: 700px;
+    height: 620px;
     color: #424242;
 
     position: relative;
 }
 
 .signininform {
-    /* background-color:#fff;
-    opacity: 0.7; */
-    border-radius: 20px;
     padding: 20px;
     width: 500px;
-
+   
     position:absolute;
-    left: 100px;
-    top: 90px;
+    left: 120px;
+    top: 60px;
 }
 
 .signininform h1 {
@@ -32,7 +29,7 @@
 
 .signinItem{
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .signinItem h2 {
@@ -69,7 +66,7 @@ input {
 
 .check {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .check label {
@@ -81,18 +78,37 @@ button {
     background-color: #424242;
     border-radius: 40px;
     width: 120px;
-    height: 40px;
+    height: 30px;
     color:#fff ;
+    line-height: 1.1;
     
-
-    margin-left: 190px;
-    margin-bottom: 10px;
+  
+    margin-left: 100px;
+    /* margin-bottom: 10px; */
 }
 
 .signininform a {
     /* text-decoration: none; */
     font-size: 12px;
     color: #424242;
-    margin-left: 210px;
+    /* margin-left: 210px; */
     
+}
+
+.signininform .a1 {
+    font-size: 12px;
+    color: #424242;
+    text-decoration: none;
+    /* margin-left: 400px; */
+
+}
+
+.signininform .aa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signininform .btm {
+    display: flex;
+    align-items: center;
 }

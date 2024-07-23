@@ -22,7 +22,7 @@
 
     position:absolute;
     left: 120px;
-    top: 150px;
+    top: 60px;
 }
 
 #register .registerInform h1 {
@@ -37,7 +37,7 @@
 .registerInform .registerItem {
 
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 
@@ -67,7 +67,7 @@
     color:#fff ;
     
 
-    margin-left: 190px;
+    /* margin-left: 190px; */
     margin-bottom: 10px;
 }
 
@@ -75,15 +75,31 @@
 .registerInform .link {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .registerInform a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 14px;
+}
 
+.registerInform .aa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+.registerInform .a1 {
     font-size: 12px;
     color: #424242;
+    text-decoration: none;
     /* margin-left: 400px; */
 
 }
 
-
+.registerInform a:hover {
+    color: #f2b166;
+}

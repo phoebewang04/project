@@ -42,6 +42,11 @@
     grid-row: 2 / 4;
 }
 
+#joinus .asign {
+    text-decoration: none;
+    color: #424242;
+}
+
 #joinus p {
     width: 530px;
     line-height: 1.5;

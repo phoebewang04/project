@@ -32,7 +32,7 @@
 
 #article {
 
-    border: 2px solid #424242;
+    /* border: 2px solid #424242; */
     width: 1000px;
     margin: 20px auto;
     padding: 20px;
@@ -44,59 +44,35 @@
 
 #article h1 {
 
-    font-size: 32px;
-    padding-top: 20px;
+    font-size: 20px;
     padding-bottom: 20px;
 }
 
 #article .p1 {
     padding-bottom: 40px;
+    font-size: 14px;
 }
 
 #article ol {
     
 }
 
-/* #article ol::before {
-    content: '';
-    display: block;
-    width: 920px;
-    height: 1px;
-    background-color: #ADAAAA;
-
-    position: absolute ;
-    left: 0;
-    top: 100px;
-} */
-
-#article ol::after {
-
-    content: '';
-    display: block;
-    width: 1000px;
-    height: 1px;
-    background-color: #ADAAAA;
-
-    position: absolute ;
-    left: 20px;
-    top: 715px;
-}
-
 #article ol li {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 12px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #article ol p {
-    font-size: 14px;
-    padding-bottom: 28px;
+    font-size: 12px;
+    padding-bottom: 24px;
 }
 
 
 #article .p3 {
-    padding: 40px 0px;
+    padding: 20px 0px;
+    font-size: 14px;
 
 }
 
