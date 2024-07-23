@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -20,364 +22,381 @@
 
         <div id="maintop"> <!--主選單-->
 
-            <a href="./index.html"><img src="./img/logo.png" alt=""></a>
-            <div class="middle">
-                <ul>
-                    <li><a href="./adopt.html">我想領養</a></li>
-                    <li><a href="./ppt.html">奴友論壇</a></li>
-                    <li><a href="./article.html">好文閱讀</a></li>
-                    <li><a href="./product.html">好物推薦</a></li>
-                    <li><a href="./register.html">奴友專區</a></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li class="burger"><i class="fa-solid fa-bars"></i></li>
-                </ul>
-            </div>
+            <nav class="top">
+                <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+                <div class="middle">
+                    <ul>
+                        <li><a href="./adopt.html">我想領養</a></li>
+                        <li><a href="./ppt.html">奴友論壇</a></li>
+                        <li><a href="./article.html">好文閱讀</a></li>
+                        <li><a href="./product.html">好物推薦</a></li>
+                        <li><a href="./register.html">奴友專區</a></li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </ul>
+                </div>
 
+                <li class="burger"><i class="fa-solid fa-bars"></i></li>
+            </nav>
         </div>
-
-
-
-        <div id="up"> <!--上層區域-->
-
-            <div class="location"> <!--地區選單-->
-                <ul>
-                    <li><a href="#">北部地區</a></li>
-                    <li><a href="#">中部地區</a></li>
-                    <li><a href="#">南部地區</a></li>
-                    <li><a href="#">東部地區</a></li>
-                </ul>
-            </div>
-
-
-
-            <div class="fastchoose"> <!--快速篩選-->
-
-                <h2>快速搜尋</h2>
-                <div class="box">
-                    <input type="checkbox" id="boy">
-                    <label for="boy">男生</label>
-                </div>
-                <div class="box">
-                    <input type="checkbox" id="girl">
-                    <label for="girl">女生</label>
-                </div>
-                <div class="box">
-                    <input type="checkbox" id="bcat">
-                    <label for="bcat">幼貓</label>
-                </div>
-                <div class="box">
-                    <input type="checkbox" id="acat">
-                    <label for="acat">成貓</label>
-                </div>
-                <div class="box">
-                    <input type="checkbox" id="long">
-                    <label for="long">長毛</label>
-                </div>
-                <div class="box">
-                    <input type="checkbox" id="short">
-                    <label for="short">短毛</label>
-                </div>
-
-                <button>搜尋</button>
-            </div>
-
-
-            <!--提醒文字-->
-
-            <p>此區的送養動物均由送養人自行刊登，所有送養人電話及ID均經過系統驗證，
-                如有任何領養、認養問題請直接與送養人聯繫。領養前請謹慎考慮，不隨意棄養。</p>
-        </div>
-
-
-
-        <div id="down"> <!--下層區域-->
-
-            <div class="firstrow"> <!--第一列領養區-->
-
-                <div class="outside">
-                    <a href="./adopt1.html">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad1.jpg" alt="">
-                    </a>
-                    <h3>小橘</h3>
-                    <div class="detail">
-                        <p>年紀：12歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 女生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad2.jpg" alt="">
-                    </a>
-                    <h3>賓賓</h3>
-                    <div class="detail">
-                        <p>年紀：1歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 男生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad3.jpg" alt="">
-                    </a>
-                    <h3>小虎</h3>
-                    <div class="detail">
-                        <p>年紀：2歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 女生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="secrow"> <!--第二列領養區-->
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad4.jpg" alt="">
-                    </a>
-                    <h3>老扁</h3>
-                    <div class="detail">
-                        <p>年紀：7歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 男生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad5.jpg" alt="">
-                    </a>
-                    <h3>小嚕</h3>
-                    <div class="detail">
-                        <p>年紀：2歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 男生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad6.jpg" alt="">
-                    </a>
-                    <h3>阿哥</h3>
-                    <div class="detail">
-                        <p>年紀：1歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 男生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="thridrow"> <!--第三列領養區-->
-
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad7.jpg" alt="">
-                    </a>
-                    <h3>弟弟</h3>
-                    <div class="detail">
-                        <p>年紀：1歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 男生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad8.jpg" alt="">
-                    </a>
-                    <h3>菇菇</h3>
-                    <div class="detail">
-                        <p>年紀：2歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 女生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad9.jpg" alt="">
-                    </a>
-                    <h3>小豬</h3>
-                    <div class="detail">
-                        <p>年紀：2歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 男生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-            <div class="fourrow"> <!--第四列領養區-->
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad10.jpg" alt="">
-                    </a>
-                    <h3>老菜</h3>
-                    <div class="detail">
-                        <p>年紀：1歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 男生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad11.jpg" alt="">
-                    </a>
-                    <h3>八寶粥</h3>
-                    <div class="detail">
-                        <p>年紀：2歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 女生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="outside">
-                    <a href="#">
-                        <h1>Adopt Me</h1>
-                        <img src="./img/ad12.jpg" alt="">
-                    </a>
-                    <h3>小寶</h3>
-                    <div class="detail">
-                        <p>年紀：6歲</p>
-                        <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
-                        <p>性別: 女生</p>
-
-                        <div class="time">
-                            <span>2000 / 00/ 00</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-            <div id="numlist"> <!--頁數選單-->
-                <ul>
-                    <a href="#">
-                        <li><i class="fa-solid fa-angle-left"></i></li>
-                        <li>
-                            <div class="num">1</div>
-                        </li>
-                        <li>
-                            <div class="num">2</div>
-                        </li>
-                        <li>
-                            <div class="num">3</div>
-                        </li>
-                        <li>
-                            <div class="num">...</div>
-                        </li>
-                        <li>
-                            <div class="num">12</div>
-                        </li>
-                        <li><i class="fa-solid fa-angle-right"></i></li>
-                    </a>
-                </ul>
-            </div>
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-        <footer> <!--頁尾-->
-
-            <img src="./img/logo.png" alt="">
-            <ul>
-                <li><a href="./aboutus.html">關於我們</a></li>
-                <li><a href="./article.html">最新文章</a></li>
-                <li><a href="./adoptinform.html">領養須知</a></li>
-                <li><a href="./service.html">隱私權政策</a></li>
-            </ul>
-            <p>本網站為緯育TibaMe前端工程師班第93期學員專題作品,本平台僅供學習、展示之用。參考資源: 好物快寵、貼心毛寶、Dcard、各大領養平台</p>
-
-        </footer>
 
 
     </div>
+
+    <div id="up"> <!--上層區域-->
+
+        <div class="location"> <!--地區選單-->
+            <ul>
+                <li><a href="#">北部地區</a></li>
+                <li><a href="#">中部地區</a></li>
+                <li><a href="#">南部地區</a></li>
+                <li><a href="#">東部地區</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="fastchoose"> <!--快速篩選-->
+
+            <h2>快速搜尋</h2>
+            <div class="box">
+                <input type="checkbox" id="boy">
+                <label for="boy">男生</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="girl">
+                <label for="girl">女生</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="bcat">
+                <label for="bcat">幼貓</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="acat">
+                <label for="acat">成貓</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="long">
+                <label for="long">長毛</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="short">
+                <label for="short">短毛</label>
+            </div>
+
+            <button>搜尋</button>
+        </div>
+
+
+        <!--提醒文字-->
+
+        <p>此區的送養動物均由送養人自行刊登，所有送養人電話及ID均經過系統驗證，
+            如有任何領養、認養問題請直接與送養人聯繫。領養前請謹慎考慮，不隨意棄養。</p>
+    </div>
+
+
+
+    <div id="down"> <!--下層區域-->
+
+
+
+        <!-- <div class="firstrow"> 第一列領養區 -->
+
+        <div class="outside">
+            <a href="./adopt1.html">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad1.jpg" alt="">
+            </a>
+            <h3>小橘</h3>
+            <div class="detail">
+                <p>年紀：12歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 女生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad2.jpg" alt="">
+            </a>
+            <h3>賓賓</h3>
+            <div class="detail">
+                <p>年紀：1歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 男生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad3.jpg" alt="">
+            </a>
+            <h3>小虎</h3>
+            <div class="detail">
+                <p>年紀：2歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 女生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- </div> -->
+
+
+
+
+        <!-- <div class="secrow"> 第二列領養區 -->
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad4.jpg" alt="">
+            </a>
+            <h3>老扁</h3>
+            <div class="detail">
+                <p>年紀：7歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 男生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad5.jpg" alt="">
+            </a>
+            <h3>小嚕</h3>
+            <div class="detail">
+                <p>年紀：2歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 男生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad6.jpg" alt="">
+            </a>
+            <h3>阿哥</h3>
+            <div class="detail">
+                <p>年紀：1歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 男生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- </div> -->
+
+
+
+        <!-- <div class="thridrow"> 第三列領養區 -->
+
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad7.jpg" alt="">
+            </a>
+            <h3>弟弟</h3>
+            <div class="detail">
+                <p>年紀：1歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 男生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad8.jpg" alt="">
+            </a>
+            <h3>菇菇</h3>
+            <div class="detail">
+                <p>年紀：2歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 女生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad9.jpg" alt="">
+            </a>
+            <h3>小豬</h3>
+            <div class="detail">
+                <p>年紀：2歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 男生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- </div> -->
+
+
+
+
+        <!-- <div class="fourrow"> 第四列領養區 -->
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad10.jpg" alt="">
+            </a>
+            <h3>老菜</h3>
+            <div class="detail">
+                <p>年紀：1歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 男生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad11.jpg" alt="">
+            </a>
+            <h3>八寶粥</h3>
+            <div class="detail">
+                <p>年紀：2歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 女生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="outside">
+            <a href="#">
+                <h1>Adopt Me</h1>
+                <img src="./img/ad12.jpg" alt="">
+            </a>
+            <h3>小寶</h3>
+            <div class="detail">
+                <p>年紀：6歲</p>
+                <p>所在地區：貓貓縣貓貓市貓國一路99號</p>
+                <p>性別: 女生</p>
+
+                <div class="time">
+                    <span>2000 / 00/ 00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- </div> -->
+
+
+    </div>
+
+
+
+
+    <div id="numlist"> <!--頁數選單-->
+        <ul>
+            <a href="#">
+                <li><i class="fa-solid fa-angle-left"></i></li>
+                <li>
+                    <div class="num">1</div>
+                </li>
+                <li>
+                    <div class="num">2</div>
+                </li>
+                <li>
+                    <div class="num">3</div>
+                </li>
+                <li>
+                    <div class="num">...</div>
+                </li>
+                <li>
+                    <div class="num">12</div>
+                </li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+            </a>
+        </ul>
+    </div>
+
+
+
+
+
+    <footer> <!--頁尾-->
+
+        <img src="./img/logo.png" alt="">
+        <ul>
+            <li><a href="./aboutus.html">關於我們</a></li>
+            <li><a href="./article.html">最新文章</a></li>
+            <li><a href="./adoptinform.html">領養須知</a></li>
+            <li><a href="./service.html">隱私權政策</a></li>
+        </ul>
+        <p>本網站為緯育TibaMe前端工程師班第93期學員專題作品,本平台僅供學習、展示之用。參考資源: 好物快寵、貼心毛寶、Dcard、各大領養平台</p>
+
+    </footer>
+
+
+    </div>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('.burger').on('click', function() {
+                $('.middle ul').toggle();
+            });
+
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.middle, .burger').length) {
+                    $('.middle ul').hide();
+                }
+            });
+        });
+    </script>
+
 </body>
+
+
 
 </html>

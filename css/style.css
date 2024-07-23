@@ -646,7 +646,7 @@ footer li a:hover {
         font-size: 14px;
     }
 
-    .icon {
+    .icon i {
         display: block;
 
         position: relative;
@@ -670,7 +670,7 @@ footer li a:hover {
     }
 
     #maintop .top {
-        width: auto;
+        width: 100%;
     }
 
     .top .burger {
@@ -684,12 +684,12 @@ footer li a:hover {
     }
 
     #maintop .middle ul {
-        /* display: none; */
+        display: none;
         background-color: #424242;
         position: absolute;
         right: 0;
-        top: 60px;
-        width: 100%;
+        top: 70px;
+        /* display: block; */
 
     }
 
@@ -702,7 +702,12 @@ footer li a:hover {
         clear: both;
         line-height: 40px;
         border-bottom: 1px solid #a6937c;
-        border: 1px solid red;
+        width: 100px;
+        text-align: center;
+    }
+
+    #maintop .middle li:last-child {
+        display: none;
     }
 
     #maintop .middle li a {
@@ -729,31 +734,21 @@ footer li a:hover {
     #banner .bannerArticle .top {
         /* display: none; */
         font-size: 13px;
+        line-height: 1.3;
 
     }
 
     #banner .bannerItem {
         display: none;
-        /* padding-top: 5px; */ 
-        /* display : flex;
-        flex-direction: row;
-        text-align: center;
-        flex-wrap: wrap;
-        width: 300px;
-        align-items: center;
-        justify-content: center; */
     }
-
-    .bannerItem1 {
-        /* width: 100px;
-        padding: 5px;
-        margin: 5px; */
-    }
-
   
     #text1 {
         width: 400px;
         padding-top: 20px;
+    }
+
+    #text1 p {
+        font-size: 13px;
     }
 
     #text1 p::before {
@@ -805,7 +800,7 @@ footer li a:hover {
     }
 
     #messagerow {
-        padding-top:12px;
+        display: none;
     }
 
     #smallcatpic {

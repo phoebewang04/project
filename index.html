@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -504,9 +505,17 @@
         <!--動態輪播-->
 
         <script>
-
-
-
+            $(document).ready(function() {
+                $('.burger').on('click', function() {
+                    $('.middle ul').toggle();
+                });
+    
+                $(document).on('click', function(event) {
+                    if (!$(event.target).closest('.middle, .burger').length) {
+                        $('.middle ul').hide();
+                    }
+                });
+            });
         </script>
 
 
