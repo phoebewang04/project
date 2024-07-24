@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>領養平台</title>
-    <link rel="stylesheet" href="./css/adopt1.css">
+    <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/f484a5c220.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -47,16 +48,35 @@
 
 
         <div id="infrom"> <!--領養相關資訊及照片-->
-            <div class="slide">
-                <img src="./img/ad13.jpg" alt="">
+            <div class="swiper-container mySwiper">
+
+                <div class="swiper-wrapper slide">
+                    <div class="swiper-slid">
+                         <img src="./img/ad13.jpg" alt="">
+                    </div>
+                    <div class="swiper-slid">
+                        <img src="./img/ad14.jpg" alt="">
+                    </div>
+                    <div class="swiper-slid">
+                        <img src="./img/ad15.jpg" alt="">
+                    </div>
+                    <div class="swiper-slid">
+                        <img src="./img/ad16.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next arrow1"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                <div class="swiper-button-prev arrow2"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                
+            </div>
+
                 <div class="smallpic">
                     <img src="./img/ad14.jpg" alt="">
                     <img src="./img/ad15.jpg" alt="">
                     <img src="./img/ad16.jpg" alt="">
                 </div>
-                <div class="arrow1"><i class="fa-solid fa-circle-chevron-right"></i></div>
-                <div class="arrow2"><i class="fa-solid fa-circle-chevron-left"></i></div>
-            </div>
+
 
             <div class="name">
                 <h1>姓名 : 小橘</h1>
@@ -76,8 +96,6 @@
                 <p><a href="./adoptinform.html">領養須知及條件</a></p>
             </div>
         </div>
-
-
 
 
 
@@ -110,7 +128,29 @@
                 }
             });
         });
+    
+
+
+        let swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // 小圖片點擊事件
+        $('.smallpic img').on('click', function() {
+            const index = $(this).index() + 1; // 小圖片索引
+            swiper.slideTo(index, 1000, false); // 切換到對應的圖片
+        });
+
     </script>
+
+   
 
 </body>
 

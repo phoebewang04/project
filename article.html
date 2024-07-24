@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -37,6 +38,11 @@
             </nav>
         </div>
 
+        <div class="text">
+            <h1>學習養貓知識的優點</h1>
+            <p>學習養貓知識能更好地理解貓咪的行為與需求，提供更佳的照護，增進人貓關係，讓貓咪擁有健康快樂的生活。</p>
+        </div>
+
 
         <div id="articletop"> <!--推薦文章上層-->
             <div class="readout1">
@@ -55,7 +61,7 @@
                 <div class="topread">
                     <a href="./article3.html">
                         <h3>貓咪為什麼總是挑食?</h3>
-                        <p>貓貓咪挑食是許多飼主常見的困擾，這種行為可能讓人感到無奈和擔憂。了解貓咪挑食的原因，有助於我們採取適當的措施來改善牠們的飲食習慣。以下是一些常見的原因及其解決方法。首先
+                        <p>貓咪挑食是許多飼主常見的困擾，這種行為可能讓人感到無奈和擔憂。了解貓咪挑食的原因，有助於我們採取適當的措施來改善牠們的飲食習慣。以下是一些常見的原因及其解決方法。首先
                             貓咪的挑食行為可能與牠們的天性有關貓咪是肉食性動物 對... Read More </p>
                     </a>
                 </div>
@@ -181,10 +187,26 @@
 
         </footer>
 
-
-
-
     </div>
+
+    
+    <script>
+        $(document).ready(function() {
+            $('.burger').on('click', function() {
+                $('.middle ul').toggle();
+            });
+
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.middle, .burger').length) {
+                    $('.middle ul').hide();
+                }
+            });
+        });
+    </script>
+
+
+
+
 </body>
 
 </html>

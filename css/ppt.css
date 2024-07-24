@@ -146,3 +146,66 @@
    
 }
 
+
+
+/*---------- 螢幕小於 820 時 ----------*/
+
+@media screen and (max-width: 820px) {
+    #keyword {
+        width: 100%;
+    }
+
+    #keyword ul {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    #type {
+        width: 600px;
+    }
+
+    #allmessage {
+        width: 600px;
+    }
+
+    #allmessage .outframe .p2 {
+        width: 570px;
+    }
+}
+
+
+/*---------- 螢幕小於 430 時 ----------*/
+
+@media screen and (max-width: 430px) {
+    
+    #keyword {
+        padding-top: 20px;
+    }
+
+    #keyword ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 410px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #type {
+        display: none;
+    }
+
+    #allmessage {
+        width: 400px;
+    }
+
+    #allmessage .outframe .p2 {
+        width: 360px;
+    }
+
+    #keyword li {
+        padding: 10px 5px;
+        /* border: 1px solid #424242; */
+    }
+
+
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/f484a5c220.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -51,8 +52,10 @@
 
             <div class="teacher">
                 <img src="./img/ap.jpg" alt="">
-                <h4 class="name">Mandy Hong</4>
-                    <h4 class="school">貓國首位研究貓行為學專家</4>
+                <div class="name">
+                    <h4>Mandy Hong</4>
+                    <h4>貓國首位研究貓行為學專家</4>
+                </div>
             </div>
 
             <img src="./img/pee.jpg" alt="">
@@ -139,10 +142,21 @@
 
         </footer>
 
-
-
-
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.burger').on('click', function() {
+                $('.middle ul').toggle();
+            });
+
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.middle, .burger').length) {
+                    $('.middle ul').hide();
+                }
+            });
+        });
+    </script>
 
 </body>
 
