@@ -1,6 +1,6 @@
 @import url(./reset.css);
 
-body{}
+body {}
 
 /* 麵包屑返回列表 */
 
@@ -42,7 +42,15 @@ body{}
     padding: 20px 0px;
 }
 
-#joinus button {
+#joinus .asign {
+    text-decoration: none;
+    color: #424242;
+}
+
+#joinus .asign a {}
+
+
+#joinus .asign button {
     background-color: #F9D6AE;
     color: #424242;
     padding: 30px 40px;
@@ -50,17 +58,16 @@ body{}
     border: 1px solid #ADAAAA;
 }
 
-#joinus .asign {
-    text-decoration: none;
-    color: #424242;
-}
 
-#joinus p {
+#joinus .asign p {
     font-size: 14px;
     width: 460px;
 }
 
-#joinus img {
+#joinus .pic {}
+
+
+#joinus .pic img {
     height: 120px;
 }
 
@@ -103,6 +110,9 @@ body{}
     background-color: #F9D6AE;
 }
 
+#shoplist .list {
+    display: none;
+}
 
 
 
@@ -113,12 +123,12 @@ body{}
     width: 1200px;
     margin: 0 auto;
     margin-top: 48px;
-    
+
 
 
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -129,13 +139,14 @@ body{}
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 #canlist .can img {
-    height: 150px; 
+    height: 150px;
     margin-bottom: 10px;
-    transform:scale(1,1);transition: all 0.5s ease-out;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
 }
 
 #canlist .can h4 {
@@ -145,12 +156,8 @@ body{}
 #canlist .can p {}
 
 #canlist .can:hover img {
-   
-    /* border-radius: 50px;
-    background: #D9D9D9;
-     */
 
-    transform:scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 
 
@@ -197,3 +204,159 @@ body{}
 
 }
 
+
+
+
+
+/*---------- 螢幕小於 820 時 ----------*/
+
+
+@media screen and (max-width:820px) {
+
+    #joinus {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #joinus .asign {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 740px;
+        padding-bottom: 10px;
+    }
+
+    #joinus .asign a {}
+
+    #joinus .asign button {
+        width: 180px;
+        height: 30px;
+        line-height: 0px;
+    }
+
+    #joinus .asign p {
+        width: 550px;
+        line-height: 1.2;
+    }
+
+    #joinus .pic img {
+        width: 370px;
+        height: 150px;
+    }
+
+    #shoplist {
+        width: 680px;
+        margin-top: 30px;
+    }
+
+    #shoplist ul {
+        flex-wrap: wrap;
+    }
+
+    #shoplist ul li {
+        margin-bottom: 10px;
+    }
+
+    #canlist {
+        width: 790px;
+    }
+
+    #canlist .can {
+        margin: 0 20px;
+        margin-bottom: 50px;
+    }
+
+
+}
+
+/*---------- 螢幕小於 430 時 ----------*/
+
+@media screen and (max-width:430px) {
+
+    #joinus {
+        /* border-bottom: none; */
+    }
+
+    #joinus .asign {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #joinus .asign p {
+        width: 365px;
+    }
+
+    #joinus .asign button {
+        width: 365px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    #joinus .pic img {}
+
+    #joinus .pic {
+        width: 369px;
+        margin: 0 auto;
+    }
+
+    #canlist {
+        width: 400px;
+    }
+
+    #shoplist {
+        width: 100%;
+    }
+
+    #shoplist ul {
+
+        
+        background-color: gray;
+        position: absolute;
+        right: 180px;
+        top: 683px;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    #shoplist ul li {
+
+        float: none;
+        clear: both;
+        line-height: 40px;
+        border-bottom: 1px solid #a6937c;
+        width: 200px;
+        text-align: center;
+        background-color: transparent; 
+        border: none;
+        border-radius: 0px;
+
+    }
+
+    #shoplist .list {
+        
+        display: block;
+        border: 1px solid #424242;
+        width: 400px;
+        height: 30px;
+        border-radius: 20px;
+        text-align: end;
+        margin: 0 auto;
+        background-color: gray;
+       
+    }
+
+
+    #shoplist .list i {
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    #shoplist a {
+        color: white;
+    }
+
+
+}

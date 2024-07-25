@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f484a5c220.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -51,16 +52,23 @@
 
         <div id="joinus"> <!--加入會員選單-->
 
-            <a href="./signin.html" class="asign"><button>加入會員</button></a>
+            <div class="asign">
+            <a href="./signin.html"><button>加入會員</button></a>
             <p>加入我們成為貓奴會員，即可享受多項折扣優惠。我們精心挑選的食品都經過嚴格把關，確保健康和安全。此外，會員還能獲得實用的貓咪用品推薦，這些用品經過專業評測，旨在提高您和寵物的生活品質。成為會員，讓您的貓貓享受更好的照顧和更多的福利！
             </p>
+            </div>
+
+            <div class="pic">
             <img src="./img/psmall1.jpg" alt="">
             <img src="./img/psmall2.jpg" alt="">
+            </div>
+
         </div>
 
 
 
         <div id="shoplist"> <!--商品列表-->
+
             <ul>
                 <li><a href="./product2.html">貓罐頭/主食罐/湯罐</a></li>
                 <li><a href="">貓貓戶外用品</a></li>
@@ -71,6 +79,7 @@
                 <li><a href="">美容驅蟲用品</a></li>
                 <li><a href="">貓飼料推薦</a></li>
             </ul>
+            <div class="list"><i class="fa-solid fa-caret-down"></i></div>
         </div>
 
 
@@ -327,13 +336,36 @@
         </footer>
 
 
-
-
-
-
-
-
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.burger').on('click', function() {
+                $('.middle ul').toggle();
+            });
+
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.middle, .burger').length) {
+                    $('.middle ul').hide();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.list').on('click', function() {
+                $('#shoplist ul').toggle();
+            });
+
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('#shoplist, .list').length) {
+                    $('#shoplist ul').hide();
+                }
+            });
+        });
+    </script>
+
 
 
 

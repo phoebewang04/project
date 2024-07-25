@@ -20,7 +20,7 @@
     padding: 20px;
     width: 500px;
 
-    position:absolute;
+    position: absolute;
     left: 120px;
     top: 60px;
 }
@@ -64,8 +64,8 @@
     border-radius: 40px;
     width: 120px;
     height: 40px;
-    color:#fff ;
-    
+    color: #fff;
+
 
     /* margin-left: 190px; */
     margin-bottom: 10px;
@@ -92,6 +92,7 @@
     margin-bottom: 30px;
 
 }
+
 .registerInform .a1 {
     font-size: 12px;
     color: #424242;
@@ -102,4 +103,78 @@
 
 .registerInform a:hover {
     color: #f2b166;
+}
+
+
+
+
+/*---------- 螢幕小於 820 時 ----------*/
+
+@media screen and (max-width: 820px) {
+
+    #register {
+
+        height: 1180px;
+        background-position: center;
+        /* opacity: 0.3; */
+
+    }
+
+    #register .registerInform {
+        position: absolute;
+        left: 130px;
+        top: 210px;
+    }
+
+    .registerInform .aa {
+
+    }
+
+    .registerInform .a1 {
+
+    }
+
+    .registerInform .registerItem {
+
+    }
+
+    .registerInform .link {}
+}
+
+
+
+/*---------- 螢幕小於 430 時 ----------*/
+
+@media screen and (max-width: 430px) {
+    
+    #register {
+
+    }
+
+    #register .registerInform {
+        position: absolute;
+        left: 0px;
+        top: 80px;
+        width: 390px;
+    }
+
+    .registerInform .registerItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .registerInform .link {
+
+    }
+
+    .registeritem_cont input {
+        width: 380px;
+        padding-bottom: 10px;
+    }
+
+    .registerItem h2 {
+        padding-bottom: 20px;
+    }
+
+    
 }

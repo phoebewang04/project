@@ -2,156 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>領養平台</title>
-    <link rel="stylesheet" href="./css/test.css">
-    <link rel="stylesheet" href="./css/all.css">
-    <script src="https://kit.fontawesome.com/f484a5c220.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    /* html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    } */
+
+    .swiper {
+      width: 300px;
+      height: 120px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+        width: 100px;
+      /* display: block; */
+      /* width: 100%;
+      height: 100%; */
+      /* object-fit: cover; */
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
 
-    <div id="wrapper"> <!--最外層包裝-->
+      <div class="swiper-slide">
 
-        <div id="maintop"> <!--主選單-->
-
-            <nav class="top">
-                <a href="./index.html"><img src="./img/logo.png" alt=""></a>
-                <div class="middle">
-                    <ul>
-                        <li><a href="./adopt.html">我想領養</a></li>
-                        <li><a href="./ppt.html">奴友論壇</a></li>
-                        <li><a href="./article.html">好文閱讀</a></li>
-                        <li><a href="./product.html">好物推薦</a></li>
-                        <li><a href="./register.html">奴友專區</a></li>
-                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    </ul>
-                </div>
-
-                <li class="burger"><i class="fa-solid fa-bars"></i></li>
-            </nav>
+        <div class="bed">
+            <a href="#"><img src="./img/p6.jpg" alt=""></a>
+            <h4>兩層貓窩</h4>
+            <p>NT300</p>
         </div>
 
+     </div>
 
-        <div id="backbutton"> <!--麵包屑返回列表-->
-            <i class="fa-solid fa-angle-right"></i>
-            <a href="./adopt.html">
-                <p>Adopt Me</p>
-            </a>
-            <i class="fa-solid fa-angle-right"></i>
-            <p>貓咪資訊</p>
+      <div class="swiper-slide">
+
+        <div class="bed">
+            <a href="#"><img src="./img/p7.jpg" alt=""></a>
+            <h4>貓型貓窩</h4>
+            <p>NT300</p>
         </div>
 
-
-        <div id="infrom"> <!--領養相關資訊及照片-->
-            <div class="swiper-container mySwiper">
-
-                <div class="swiper-wrapper slide">
-                    <div class="swiper-slid">
-                         <img src="./img/ad13.jpg" alt="">
-                    </div>
-                    <div class="swiper-slid">
-                        <img src="./img/ad14.jpg" alt="">
-                    </div>
-                    <div class="swiper-slid">
-                        <img src="./img/ad15.jpg" alt="">
-                    </div>
-                    <div class="swiper-slid">
-                        <img src="./img/ad16.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next arrow1"><i class="fa-solid fa-circle-chevron-right"></i></div>
-                <div class="swiper-button-prev arrow2"><i class="fa-solid fa-circle-chevron-left"></i></div>
-                
-            </div>
-
-                <div class="smallpic">
-                    <img src="./img/ad14.jpg" alt="">
-                    <img src="./img/ad15.jpg" alt="">
-                    <img src="./img/ad16.jpg" alt="">
-                </div>
+      </div>
 
 
-            <div class="name">
-                <h1>姓名 : 小橘</h1>
-                <p>年紀 : 12歲</p>
-                <p>性別 : 男生</p>
-                <p>居住地區 : 北部地區</p>
-                <p>是否結紮 : 已完成結紮</p>
-                <p>品種 : 混種貓</p>
-                <p>生病紀錄: 無</p>
-                <br>
-                <br>
-                <p>貪睡又很愛吃,也是一個非常親人的寶貝,雖然年紀比較大,相處起來卻不是問題 如果你希望可以有個陪伴你的孩子,小橘真的很適合喔 因為它會靜靜地一直陪著你 。</p>
-                <br>
-                <button>我有意願領養</button>
-                <br>
-                <br>
-                <p><a href="./adoptinform.html">領養須知及條件</a></p>
-            </div>
+      <div class="swiper-slide">
+
+        <div class="bed">
+            <a href="#"><img src="./img/p8.jpg" alt=""></a>
+            <h4>幾何形貓窩</h4>
+            <p>NT300</p>
         </div>
 
+      </div>
 
 
-        <footer> <!--頁尾-->
+      <div class="swiper-slide">
 
-            <img src="./img/logo.png" alt="">
-            <ul>
-                <li><a href="./aboutus.html">關於我們</a></li>
-                <li><a href="./article.html">最新文章</a></li>
-                <li><a href="./adoptinform.html">領養須知</a></li>
-                <li><a href="./service.html">隱私權政策</a></li>
-            </ul>
-            <p>本網站為緯育TibaMe前端工程師班第93期學員專題作品,本平台僅供學習、展示之用。參考資源: 好物快寵、貼心毛寶、Dcard、各大領養平台</p>
+        <div class="bed">
+            <a href="#"><img src="./img/p9.jpg" alt=""></a>
+            <h4>牛奶瓶貓窩</h4>
+            <p>NT300</p>
+        </div>
 
-        </footer>
+      </div>
+
+
+      <div class="swiper-slide">
+
+        <div class="bed">
+            <a href="#"><img src="./img/p6.jpg" alt=""></a>
+            <h4>兩層貓窩</h4>
+            <p>NT300</p>
+        </div>
+
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="bed">
+            <a href="#"><img src="./img/p8.jpg" alt=""></a>
+            <h4>幾何形貓窩</h4>
+            <p>NT300</p>
+        </div>
+      </div>
 
 
     </div>
 
+    <div class="swiper-pagination"></div>
+  </div>
 
-    <script>
-        $(document).ready(function() {
-            $('.burger').on('click', function() {
-                $('.middle ul').toggle();
-            });
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-            $(document).on('click', function(event) {
-                if (!$(event.target).closest('.middle, .burger').length) {
-                    $('.middle ul').hide();
-                }
-            });
-        });
-    
-
-
-        let swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-
-        // 小圖片點擊事件
-        $('.smallpic img').on('click', function() {
-            const index = $(this).index() + 1; // 小圖片索引
-            swiper.slideTo(index, 1000, false); // 切換到對應的圖片
-        });
-
-    </script>
-
-   
-
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 
 </html>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('.list').on('click', function() {
+            $('#shoplist ul').toggle();
+        });
+
+        $(document).on('click', function(event) {
+            if (!$(event.target).closest('#shoplist, .list').length) {
+                $('#shoplist ul').hide();
+            }
+        });
+    });
+</script>

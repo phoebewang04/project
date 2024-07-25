@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>好物推薦</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/f484a5c220.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
 </head>
 
 <body>
@@ -42,9 +46,14 @@
 
 
         <div id="joinus"> <!--加入會員選單-->
-            <a href="./signin.html" class="asign"><button>加入會員</button></a>
-            <p>加入我們成為貓奴會員，即可享受多項折扣優惠。我們精心挑選的食品都經過嚴格把關，確保健康和安全。此外，會員還能獲得實用的貓咪用品推薦，這些用品經過專業評測，旨在提高您和寵物的生活品質。成為會員，讓您的貓貓享受更好的照顧和更多的福利！
-            </p>
+
+            <div class="left">
+               
+                <p>加入我們成為貓奴會員，即可享受多項折扣優惠。我們精心挑選的食品都經過嚴格把關，確保健康和安全。此外，會員還能獲得實用的貓咪用品推薦，這些用品經過專業評測，旨在提高您和寵物的生活品質。成為會員，讓您的貓貓享受更好的照顧和更多的福利！
+                </p> 
+                <a href="./signin.html"><button>加入會員</button></a>
+            </div>
+
             <div class="member">
                 <img src="./img/psmall1.jpg" alt="">
                 <img src="./img/psmall2.jpg" alt="">
@@ -70,155 +79,390 @@
 
             <div id="alllist">
 
-                <div class="backbutton"> <!--麵包屑返回列表-->
-                    <i class="fa-solid fa-angle-right"></i>
-                    <a href="./product2.html">
-                        <p>貓罐頭/主食罐/湯罐</p>
-                    </a>
+                <div class="one">
+
+                    <div class="backbutton"> <!--麵包屑返回列表-->
+                        <i class="fa-solid fa-angle-right"></i>
+                        <a href="./product2.html">
+                            <p>貓罐頭/主食罐/湯罐</p>
+                        </a>
+                    </div>
+
+
+                    <div class="canlist"> <!--罐頭陳列-->
+
+                
+
+                        <div>
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>多汁嫩雞罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>鮮魚肉醬罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>海鮮總匯罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>牧野牛罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>多汁嫩雞罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Swiper -->
+
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                    
+                          <div class="swiper-slide">
+                    
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>多汁嫩雞罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                    
+                         </div>
+                    
+                          <div class="swiper-slide">
+                    
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>鮮魚肉醬罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                    
+                          </div>
+                    
+                    
+                          <div class="swiper-slide">
+                    
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>海鮮總匯罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                    
+                          </div>
+                    
+                    
+                          <div class="swiper-slide">
+                    
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>牧野牛罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                    
+                          </div>
+                    
+                    
+                          <div class="swiper-slide">
+                    
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>多汁嫩雞罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                    
+                          </div>
+                    
+                    
+                          <div class="swiper-slide">
+                            <div class="can">
+                                <a href="#"><img src="./img/p1.jpg" alt=""></a>
+                                <h4>鮮魚肉醬罐頭</h4>
+                                <p>NT100</p>
+                            </div>
+                          </div>
+                    
+                          
+                        </div>
+                    
+                        <div class="swiper-pagination"></div>
+                      </div>
                 </div>
 
 
-                <div class="canlist"> <!--罐頭陳列-->
+                <div class="one">
 
-                    <div>
-                        <div class="can">
-                            <a href="#"><img src="./img/p1.jpg" alt=""></a>
-                            <h4>鮮嫩鮪魚罐頭</h4>
-                            <p>NT100</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="can">
-                            <a href="#"><img src="./img/p1.jpg" alt=""></a>
-                            <h4>多汁嫩雞罐頭</h4>
-                            <p>NT100</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="can">
-                            <a href="#"><img src="./img/p1.jpg" alt=""></a>
-                            <h4>鮮魚肉醬罐頭</h4>
-                            <p>NT100</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="can">
-                            <a href="#"><img src="./img/p1.jpg" alt=""></a>
-                            <h4>海鮮總匯罐頭</h4>
-                            <p>NT100</p>
-                        </div>
+                    <div class="cattoy"> <!--麵包屑返回列表-->
+                        <i class="fa-solid fa-angle-right"></i>
+                        <a href="#">
+                            <p>逗貓玩具/貓窩</p>
+                        </a>
                     </div>
 
 
-                    <div>
-                        <div class="can">
-                            <a href="#"><img src="./img/p1.jpg" alt=""></a>
-                            <h4>牧野牛罐頭</h4>
-                            <p>NT100</p>
+                    <div class="toylist"> <!--抓柱陳列-->
+
+                        <div>
+                            <div class="toy">
+                                <a href="#"><img src="./img/p2.jpg" alt=""></a>
+                                <h4>三立抓柱</h4>
+                                <p>NT150</p>
+                            </div>
                         </div>
+
+
+                        <div>
+                            <div class="toy">
+                                <a href="#"><img src="./img/p3.jpg" alt=""></a>
+                                <h4>單球抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="toy">
+                                <a href="#"><img src="./img/p4.jpg" alt=""></a>
+                                <h4>草皮抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="toy">
+                                <a href="#"><img src="./img/p5.jpg" alt=""></a>
+                                <h4>益智抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+                        </div>
+
+
                     </div>
+
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="toy">
+                                <a href="#"><img src="./img/p3.jpg" alt=""></a>
+                                <h4>單球抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="toy">
+                                <a href="#"><img src="./img/p2.jpg" alt=""></a>
+                                <h4>三立抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="toy">
+                                <a href="#"><img src="./img/p3.jpg" alt=""></a>
+                                <h4>單球抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="toy">
+                                <a href="#"><img src="./img/p4.jpg" alt=""></a>
+                                <h4>草皮抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="toy">
+                                <a href="#"><img src="./img/p5.jpg" alt=""></a>
+                                <h4>益智抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="toy">
+                                <a href="#"><img src="./img/p2.jpg" alt=""></a>
+                                <h4>三立抓柱</h4>
+                                <p>NT150</p>
+                            </div>
+                        </div>
+
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
                 </div>
 
 
+                <div class="one">
 
-                <div class="cattoy"> <!--麵包屑返回列表-->
-                    <i class="fa-solid fa-angle-right"></i>
-                    <a href="#">
-                        <p>逗貓玩具/貓窩</p>
-                    </a>
-                </div>
-
-
-                <div class="toylist"> <!--抓柱陳列-->
-
-                    <div>
-                        <div class="toy">
-                            <a href="#"><img src="./img/p2.jpg" alt=""></a>
-                            <h4>三立抓柱</h4>
-                            <p>NT150</p>
-                        </div>
+                    <div class="catbedlist"> <!--麵包屑返回列表-->
+                        <i class="fa-solid fa-angle-right"></i>
+                        <a href="#">
+                            <p>逗貓玩具/貓窩</p>
+                        </a>
                     </div>
 
 
-                    <div>
-                        <div class="toy">
-                            <a href="#"><img src="./img/p3.jpg" alt=""></a>
-                            <h4>單球抓柱</h4>
-                            <p>NT150</p>
+                    <div class="catbed"> <!--貓窩列表-->
+
+
+                        <div>
+                            <div class="bed">
+                                <a href="#"><img src="./img/p6.jpg" alt=""></a>
+                                <h4>兩層貓窩</h4>
+                                <p>NT300</p>
+                            </div>
                         </div>
+
+                        <div>
+                            <div class="bed">
+                                <a href="#"><img src="./img/p7.jpg" alt=""></a>
+                                <h4>貓型貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="bed">
+                                <a href="#"><img src="./img/p8.jpg" alt=""></a>
+                                <h4>幾何形貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="bed">
+                                <a href="#"><img src="./img/p9.jpg" alt=""></a>
+                                <h4>牛奶瓶貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+                        </div>
+
                     </div>
 
 
-                    <div>
-                        <div class="toy">
-                            <a href="#"><img src="./img/p4.jpg" alt=""></a>
-                            <h4>草皮抓柱</h4>
-                            <p>NT150</p>
+
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="bed">
+                                <a href="#"><img src="./img/p6.jpg" alt=""></a>
+                                <h4>兩層貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+
                         </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="bed">
+                                <a href="#"><img src="./img/p7.jpg" alt=""></a>
+                                <h4>貓型貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="bed">
+                                <a href="#"><img src="./img/p8.jpg" alt=""></a>
+                                <h4>幾何形貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="bed">
+                                <a href="#"><img src="./img/p6.jpg" alt=""></a>
+                                <h4>兩層貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <div class="bed">
+                                <a href="#"><img src="./img/p6.jpg" alt=""></a>
+                                <h4>兩層貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="bed">
+                                <a href="#"><img src="./img/p8.jpg" alt=""></a>
+                                <h4>幾何形貓窩</h4>
+                                <p>NT300</p>
+                            </div>
+                        </div>
+
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
                     </div>
 
-
-                    <div>
-                        <div class="toy">
-                            <a href="#"><img src="./img/p5.jpg" alt=""></a>
-                            <h4>益智抓柱</h4>
-                            <p>NT150</p>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-                <div class="catbedlist"> <!--麵包屑返回列表-->
-                    <i class="fa-solid fa-angle-right"></i>
-                    <a href="#">
-                        <p>逗貓玩具/貓窩</p>
-                    </a>
-                </div>
-
-
-                <div class="catbed"> <!--貓窩列表-->
-
-
-                    <div>
-                        <div class="bed">
-                            <a href="#"><img src="./img/p6.jpg" alt=""></a>
-                            <h4>兩層貓窩</h4>
-                            <p>NT300</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="bed">
-                            <a href="#"><img src="./img/p7.jpg" alt=""></a>
-                            <h4>貓型貓窩</h4>
-                            <p>NT300</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="bed">
-                            <a href="#"><img src="./img/p8.jpg" alt=""></a>
-                            <h4>幾何形貓窩</h4>
-                            <p>NT300</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="bed">
-                            <a href="#"><img src="./img/p9.jpg" alt=""></a>
-                            <h4>牛奶瓶貓窩</h4>
-                            <p>NT300</p>
-                        </div>
-                    </div>
 
                 </div>
             </div>
-
         </div>
 
 
@@ -235,9 +479,39 @@
 
         </footer>
 
-
-
     </div>
+
+    <script>
+
+        $(document).ready(function() {
+            $('.burger').on('click', function() {
+                $('.middle ul').toggle();
+            });
+
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.middle, .burger').length) {
+                    $('.middle ul').hide();
+                }
+            });
+        });
+
+    </script>
+
+
+     <!-- Initialize Swiper -->
+
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+
+    </script>
 
 
 

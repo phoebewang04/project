@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/f484a5c220.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -85,9 +86,23 @@
 
         </footer>
 
-
-
     </div>
+
+     <!--動態輪播-->
+
+     <script>
+        $(document).ready(function() {
+            $('.burger').on('click', function() {
+                $('.middle ul').toggle();
+            });
+
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.middle, .burger').length) {
+                    $('.middle ul').hide();
+                }
+            });
+        });
+    </script>
 
 
 
