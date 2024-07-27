@@ -917,12 +917,16 @@ footer li a:hover {
     }
 
     .swiper2 .swiper-wrapper {
-        height: 160px;
+        height: 200px;
         padding-bottom: 30px;
     }
 
     .swiper2 .swiper-pagination {
-        bottom: -10px;
+        top: 960px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #F9D6AE;
     }
 
 }

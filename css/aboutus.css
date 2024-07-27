@@ -4,7 +4,8 @@
 
 .aboutus {
     padding: 20px;
-    width: 900px;
+    width: 900px ;
+    height: 100vh;
     margin: 40px auto;
 
     position: relative;
@@ -22,6 +23,7 @@
 
 .aboutus p {
     font-size: 14px;
+    line-height: 1.4;
 }
 
 .aboutus h2 {
@@ -37,4 +39,62 @@
 
 .aboutus .bottom {
     margin-top: 70px;
+}
+
+
+
+/*---------- 螢幕小於 820 時 ----------*/
+
+@media screen and (max-width: 820px) {
+
+    body {
+
+    }
+
+    #wrapper {
+
+    }
+
+    .aboutus {
+        width: auto;
+        padding: 40px;
+    }
+
+    .aboutus h1 {
+        
+    }
+
+    .aboutus p {
+        font-size: 16px;
+    }
+
+    .aboutus .bottom {
+        margin-top: 20px;
+        width: 570px;
+    }
+
+    .aboutus .img {
+        position: absolute;
+        left: 610px;
+        bottom: 420px;
+    }
+}
+
+
+
+/*---------- 螢幕小於 430 時 ----------*/
+
+@media screen and (max-width: 430px) {
+    .aboutus {
+        height: auto;
+    }
+
+    .aboutus .bottom {
+        width: 340px;
+        margin-top: 0px;
+    }
+
+    .aboutus .img {
+        display: none;
+    }
 }

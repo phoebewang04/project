@@ -183,7 +183,8 @@
     }
 
     #infrom .slide {
-        width: 100%;
+        width: 390px;
+        margin: 0 auto;
     }
 
     #infrom .name {
@@ -191,19 +192,33 @@
     }
 
     #infrom .slide img {
-
-        width: 100%;
+        width: 390px;
     }
 
     #infrom .slide .smallpic {
-        width: 100%;
+        width: 390px;
     }
 
     #infrom .slide .smallpic img {
-        width: 100%;
+        width: 125px;
+    }
+
+    #infrom .slide .arrow1 {
+        display: none;
+    }
+
+    #infrom .slide .arrow2 {
+        display: none;
+    }
+
+    #backbutton {
+        padding-left: 10px;
     }
 
 
+    #infrom .name p a {
+        font-size: 14px;
+    }
 
 
 }

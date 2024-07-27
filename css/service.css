@@ -17,8 +17,42 @@
 
 .service p {
     font-size: 14px;
+    line-height: 1.4;
 }
 
 .service h2 {
     font-weight: bold;
+}
+
+
+
+
+/*---------- 螢幕小於 820 時 ----------*/
+
+@media screen and (max-width: 820px) {
+
+    .service {
+        height: 100vh;
+    }
+
+    .service p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+/*---------- 螢幕小於 430 時 ----------*/
+
+@media screen and (max-width: 430px) {
+
+    .service {
+        height: auto;
+        padding: 30px;
+    }
+
+    .service h1 {
+        text-align: start;
+    }
 }

@@ -397,18 +397,17 @@ footer li a:hover {
     #articletop {
         width: 100%;
         padding: 0px;
-
-        /* position: relative; */
     }
 
     #articletop .readout1 {
         width: auto;
         position: relative;
+        height: fit-content;
     }
 
     #articletop .readout1 img {
-        width: 140px;
-        height: 165px;
+        width: 155px;
+        height: 184px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         position: absolute;
@@ -420,8 +419,8 @@ footer li a:hover {
     }
 
     #articletop .readout2 img {
-        width: 140px;
-        height: 164px;
+        width: 155px;
+        height: 184px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
 
@@ -437,15 +436,17 @@ footer li a:hover {
     #articletop .readout2 {
         flex-direction: row;
         position: relative;
+        height: fit-content;
     }
 
     #articletop .topread {
-        width: 360px;
+        width: 200px;
+        margin-left: 160px;
         padding-left: 0px;
-        margin: 0 auto;
-        border-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
 
-        border: 2px solid #424242;
+        border: 1px solid #424242;
         box-sizing: border-box;
 
         height: fit-content;
@@ -457,10 +458,9 @@ footer li a:hover {
     #articletop .topread h3 {
         font-size: 14px;
         margin: 0px;
-        margin-left: 159px;
         color: #424242;
 
-        padding: 10px 0px;
+        padding: 10px 10px;
     }
 
     #articledown li:nth-child(n+3) {
@@ -470,8 +470,6 @@ footer li a:hover {
     #articletop .topread p {
         padding: 0px 10px;
         margin: 0px;
-        /* margin-top: 10px; */
-        margin-left: 150px;
         line-height: 1.3;
         font-size: 12px;
         color: #424242;
@@ -486,6 +484,7 @@ footer li a:hover {
         font-size: 18px;
         text-align: center;
         margin-bottom: 10px;
+        margin-top: 40px;
     }
 
     .text p {
