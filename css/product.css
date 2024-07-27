@@ -548,4 +548,9 @@
         padding-top: 10px;
     }
 
+    .swiper-pagination-bullet-active {
+        background-color: #F9D6AE ;
+        
+    }
+
 }

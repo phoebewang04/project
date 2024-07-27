@@ -10,7 +10,7 @@
 
   <!-- Demo styles -->
   <style>
-    /* html,
+    html,
     body {
       position: relative;
       height: 100%;
@@ -23,11 +23,11 @@
       color: #000;
       margin: 0;
       padding: 0;
-    } */
+    }
 
     .swiper {
-      width: 300px;
-      height: 120px;
+      width: 100%;
+      height: 100%;
     }
 
     .swiper-slide {
@@ -40,87 +40,73 @@
     }
 
     .swiper-slide img {
-        width: 100px;
-      /* display: block; */
-      /* width: 100%;
-      height: 100%; */
-      /* object-fit: cover; */
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 </head>
 
 <body>
   <!-- Swiper -->
-  <div class="swiper mySwiper">
+   <!-- Swiper -->
+   <div class="swiper mySwiper">
+
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide">
-
-        <div class="bed">
-            <a href="#"><img src="./img/p6.jpg" alt=""></a>
-            <h4>兩層貓窩</h4>
-            <p>NT300</p>
+        <div class="swiper-slide">
+            <div class="catpic">
+                <a href="./adopt.html">
+                    <img src="./img/cat1.jpg" alt="">
+                    <h1>Adopt Me</h1>
+                </a>
+            </div>
         </div>
 
-     </div>
-
-      <div class="swiper-slide">
-
-        <div class="bed">
-            <a href="#"><img src="./img/p7.jpg" alt=""></a>
-            <h4>貓型貓窩</h4>
-            <p>NT300</p>
+        <div class="swiper-slide">
+            <div class="catpic">
+                <a href="./adopt.html">
+                    <img src="./img/cat2.jpg" alt="">
+                    <h1>Adopt Me</h1>
+                </a>
+            </div>
         </div>
 
-      </div>
-
-
-      <div class="swiper-slide">
-
-        <div class="bed">
-            <a href="#"><img src="./img/p8.jpg" alt=""></a>
-            <h4>幾何形貓窩</h4>
-            <p>NT300</p>
+        <div class="swiper-slide">
+            <div class="catpic">
+                <a href="./adopt.html">
+                    <img src="./img/cat3.jpg" alt="">
+                    <h1>Adopt Me</h1>
+                </a>
+            </div>
         </div>
 
-      </div>
-
-
-      <div class="swiper-slide">
-
-        <div class="bed">
-            <a href="#"><img src="./img/p9.jpg" alt=""></a>
-            <h4>牛奶瓶貓窩</h4>
-            <p>NT300</p>
+        <div class="swiper-slide">
+            <div class="catpic">
+                <a href="./adopt.html">
+                <img src="./img/cat4.jpg" alt="">
+                <h1>Adopt Me</h1>
+                </a>
+            </div>
         </div>
 
-      </div>
 
-
-      <div class="swiper-slide">
-
-        <div class="bed">
-            <a href="#"><img src="./img/p6.jpg" alt=""></a>
-            <h4>兩層貓窩</h4>
-            <p>NT300</p>
+        <div class="swiper-slide">
+            <div class="catpic">
+                <a href="./adopt.html">
+                <img src="./img/cat5.jpg" alt="">
+                <h1>Adopt Me</h1>
+                </a>
+            </div>
         </div>
-
-      </div>
-
-
-      <div class="swiper-slide">
-        <div class="bed">
-            <a href="#"><img src="./img/p8.jpg" alt=""></a>
-            <h4>幾何形貓窩</h4>
-            <p>NT300</p>
-        </div>
-      </div>
-
-
+        
     </div>
-
     <div class="swiper-pagination"></div>
-  </div>
+</div>
+
+</div>
+
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -128,27 +114,15 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
+        clickable: true,
       },
     });
   </script>
+  
 </body>
 
 </html>
-
-
-
-<script>
-    $(document).ready(function() {
-        $('.list').on('click', function() {
-            $('#shoplist ul').toggle();
-        });
-
-        $(document).on('click', function(event) {
-            if (!$(event.target).closest('#shoplist, .list').length) {
-                $('#shoplist ul').hide();
-            }
-        });
-    });
-</script>

@@ -45,6 +45,10 @@ body {}
 #joinus .asign {
     text-decoration: none;
     color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 610px;
 }
 
 #joinus .asign a {}
@@ -62,6 +66,7 @@ body {}
 #joinus .asign p {
     font-size: 14px;
     width: 460px;
+    line-height: 1.3;
 }
 
 #joinus .pic {}

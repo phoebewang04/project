@@ -267,67 +267,66 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
+                            <div class="swiper-slide">
 
-                            <div class="toy">
-                                <a href="#"><img src="./img/p3.jpg" alt=""></a>
-                                <h4>單球抓柱</h4>
-                                <p>NT150</p>
+                                <div class="toy">
+                                    <a href="#"><img src="./img/p3.jpg" alt=""></a>
+                                    <h4>單球抓柱</h4>
+                                    <p>NT150</p>
+                                </div>
+
                             </div>
 
-                        </div>
+                            <div class="swiper-slide">
 
-                        <div class="swiper-slide">
+                                <div class="toy">
+                                    <a href="#"><img src="./img/p2.jpg" alt=""></a>
+                                    <h4>三立抓柱</h4>
+                                    <p>NT150</p>
+                                </div>
 
-                            <div class="toy">
-                                <a href="#"><img src="./img/p2.jpg" alt=""></a>
-                                <h4>三立抓柱</h4>
-                                <p>NT150</p>
                             </div>
 
-                        </div>
 
+                            <div class="swiper-slide">
 
-                        <div class="swiper-slide">
+                                <div class="toy">
+                                    <a href="#"><img src="./img/p3.jpg" alt=""></a>
+                                    <h4>單球抓柱</h4>
+                                    <p>NT150</p>
+                                </div>
 
-                            <div class="toy">
-                                <a href="#"><img src="./img/p3.jpg" alt=""></a>
-                                <h4>單球抓柱</h4>
-                                <p>NT150</p>
                             </div>
 
-                        </div>
 
+                            <div class="swiper-slide">
 
-                        <div class="swiper-slide">
+                                <div class="toy">
+                                    <a href="#"><img src="./img/p4.jpg" alt=""></a>
+                                    <h4>草皮抓柱</h4>
+                                    <p>NT150</p>
+                                </div>
 
-                            <div class="toy">
-                                <a href="#"><img src="./img/p4.jpg" alt=""></a>
-                                <h4>草皮抓柱</h4>
-                                <p>NT150</p>
                             </div>
 
-                        </div>
 
+                            <div class="swiper-slide">
 
-                        <div class="swiper-slide">
-
-                            <div class="toy">
-                                <a href="#"><img src="./img/p5.jpg" alt=""></a>
-                                <h4>益智抓柱</h4>
-                                <p>NT150</p>
+                                <div class="toy">
+                                    <a href="#"><img src="./img/p5.jpg" alt=""></a>
+                                    <h4>益智抓柱</h4>
+                                    <p>NT150</p>
+                                </div>
                             </div>
-                        </div>
 
 
-                        <div class="swiper-slide">
-                            <div class="toy">
-                                <a href="#"><img src="./img/p2.jpg" alt=""></a>
-                                <h4>三立抓柱</h4>
-                                <p>NT150</p>
+                            <div class="swiper-slide">
+                                <div class="toy">
+                                    <a href="#"><img src="./img/p2.jpg" alt=""></a>
+                                    <h4>三立抓柱</h4>
+                                    <p>NT150</p>
+                                </div>
                             </div>
-                        </div>
-
 
                         </div>
 
@@ -484,18 +483,27 @@
     <script>
 
         $(document).ready(function() {
-            $('.burger').on('click', function() {
-                $('.middle ul').toggle();
-            });
+                    // 只在視窗寬度小於768px時綁定點擊事件
+                    if ($(window).width() < 500) {
+                        $('.burger').on('click', function() {
+                            $('.middle ul').toggle();
+                        });
+                    }
 
-            $(document).on('click', function(event) {
-                if (!$(event.target).closest('.middle, .burger').length) {
-                    $('.middle ul').hide();
-                }
-            });
-        });
-
-    </script>
+                    // 當視窗大小改變時調整
+                    $(window).resize(function() {
+                        if ($(window).width() < 500) {
+                            $('.burger').off('click').on('click', function() {
+                                $('.middle ul').toggle();
+                            });
+                        } else {
+                            $('.burger').off('click');
+                            $('.middle ul').show();
+                        }
+                    });
+                });
+            
+        </script>
 
 
      <!-- Initialize Swiper -->

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/f484a5c220.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -149,10 +150,32 @@
 
         </footer>
 
-
-
-
     </div>
+
+    <script>
+
+        $(document).ready(function() {
+                    // 只在視窗寬度小於768px時綁定點擊事件
+                    if ($(window).width() < 500) {
+                        $('.burger').on('click', function() {
+                            $('.middle ul').toggle();
+                        });
+                    }
+
+                    // 當視窗大小改變時調整
+                    $(window).resize(function() {
+                        if ($(window).width() < 500) {
+                            $('.burger').off('click').on('click', function() {
+                                $('.middle ul').toggle();
+                            });
+                        } else {
+                            $('.burger').off('click');
+                            $('.middle ul').show();
+                        }
+                    });
+                });
+            
+        </script>
 
 </body>
 
