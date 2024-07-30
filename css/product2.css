@@ -53,27 +53,28 @@ body {}
 
 #joinus .asign a {}
 
-
+/* 
 #joinus .asign button {
     background-color: #F9D6AE;
     color: #424242;
     padding: 30px 40px;
     border-radius: 28px;
     border: 1px solid #ADAAAA;
-}
+} */
 
 
 #joinus .asign p {
-    font-size: 14px;
-    width: 460px;
-    line-height: 1.3;
+    font-size: 15px;
+    width: 585px;
+    line-height: 1.5;
+
 }
 
 #joinus .pic {}
 
 
 #joinus .pic img {
-    height: 120px;
+    height: 130px;
 }
 
 

@@ -34,16 +34,23 @@ a {
     background-size: cover;
 }
 
+#banner .top p {
+    line-height: 1.4;
+}
+
 #maintop .top {
     background-color: #FFFFFF;
     opacity: 0.7;
     height: 70px;
+
 
     display: flex;
     align-items: center;
     position: relative;
 
 }
+
+
 
 #maintop .top img {
     margin-left: 41px;
